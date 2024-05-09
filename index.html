@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.scss" />
+        <title>Tab Manager</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navigatorBox">
+                <span class="navigatorBox__title">تولید محتوا برای</span>
+                <span class="navigatorBox__path">عقود معین &#187;</span>
+                <span class="navigatorBox__path">پرداخت ثمن &#187;</span>
+                <span class="navigatorBox__path">ثمن معامله ملک</span>
+            </div>
+            <div class="mainContainer">
+                <div class="tabBox">
+                    <button class="tabBox__tabs tabBox__tabs--active">
+                        محتوای آزاد
+                    </button>
+                    <button class="tabBox__tabs">محتوای شمارشی</button>
+                    <button class="tabBox__tabs">تیک‌هاید</button>
+                </div>
+                <div class="contents contents--question">
+                    <input
+                        class="questionInput questionInput--title"
+                        type="text"
+                        placeholder="ورود تیتر"
+                    />
+                    <input
+                        class="questionInput"
+                        type="text"
+                        placeholder="ورود سوال"
+                    />
+                    <div class="addOption">
+                        <button class="addOptionBtn">افزودن گزینه</button>
+                        <input
+                            class="questionInput"
+                            type="text"
+                            placeholder="گزینه ۱ (پاسخ صحیح)"
+                        />
+                        <input
+                            class="questionInput"
+                            type="text"
+                            placeholder="گزینه ۲"
+                        />
+                        <input
+                            class="questionInput"
+                            type="text"
+                            placeholder="گزینه ۳"
+                        />
+                    </div>
+                    <button class="storeBtn">ذخیره</button>
+                </div>
+                <div class="contents" style="display: none"></div>
+                <div class="contents" style="display: none"></div>
+            </div>
+        </div>
+    </body>
+</html>
