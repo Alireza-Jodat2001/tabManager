@@ -60,6 +60,14 @@
         flex-direction: column;
         gap: 20px;
     }
+
+    &--active {
+        display: flex;
+    }
+
+    &--hidden {
+        display: none;
+    }
 }
 
 .questionInput {
