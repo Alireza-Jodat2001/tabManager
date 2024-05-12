@@ -107,9 +107,19 @@
             display: flex;
         }
 
-        // &--hide .itemsBox__content {
-        //     display: none;
-        // }
+        &--show .itemsBox__toggleBtn::after {
+            content: '';
+            width: 45px;
+            height: 45px;
+            background: url('../images/icons-minimize.png') center / 45px 45px;
+        }
+
+        &--hide .itemsBox__toggleBtn::after {
+            content: '';
+            width: 45px;
+            height: 45px;
+            background: url('../images/icons-plus.png') center / 45px 45px;
+        }
     }
 
     &__titleBox {
@@ -130,28 +140,12 @@
         padding-right: 15px;
     }
 
-    &__pluseBtn {
+    &__toggleBtn {
         background: transparent;
         border: none;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    &__pluseIco {
-        width: 45px;
-    }
-
-    &__minusBtn {
-        background: transparent;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__minusIco {
-        width: 45px;
     }
 
     &__content {
