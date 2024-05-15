@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles/style.scss" />
+        <link rel="stylesheet" href="styles/style.css" />
         <title>Tab Manager</title>
     </head>
     <body>
@@ -22,7 +22,7 @@
                     <button class="tabBox__tabs">محتوای شمارشی</button>
                     <button class="tabBox__tabs">تیک‌هاید</button>
                 </div>
-                <div class="contents contents--question contents--hidden">
+                <div class="contents contents--question contents--active">
                     <input
                         class="questionInput questionInput--title"
                         type="text"
@@ -35,26 +35,15 @@
                     />
                     <div class="addOption">
                         <button class="addOptionBtn">افزودن گزینه</button>
-                        <input
-                            class="questionInput"
-                            type="text"
-                            placeholder="گزینه ۱ (پاسخ صحیح)"
-                        />
-                        <input
-                            class="questionInput"
-                            type="text"
-                            placeholder="گزینه ۲"
-                        />
-                        <input
-                            class="questionInput"
-                            type="text"
-                            placeholder="گزینه ۳"
-                        />
+                        <div class="questionInput">گزینه ۱ (پاسخ صحیح)</div>
+                        <div class="questionInput">گزینه ۲</div>
+                        <div class="questionInput">گزینه ۳</div>
                     </div>
                     <button class="storeBtn">ذخیره</button>
                 </div>
+
                 <div
-                    class="contents contents--active contents--counterContents"
+                    class="contents contents--hidden contents--counterContents"
                 >
                     <input
                         class="questionInput"
@@ -126,7 +115,6 @@
                     </div>
                     <button class="storeBtn">ذخیره</button>
                 </div>
-
                 <div class="contents contents--hidden"></div>
             </div>
         </div>
